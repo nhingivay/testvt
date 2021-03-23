@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+  }
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 3px 10px;
+  }
+
+  .toolbar {
+    padding: 15px 0px;
+   
+    .search {
+      border: none;
+      border-radius: 5px;
+      margin: 0px 25px;
+      background: red;
+      color: white;
+      font-weight: 400;
+      padding: 5px 10px;
+    }
+  }
+  
+.breadcum {
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    padding: 10px 0px 0px 25px;
+}
+}
+.add {
+  border: none;
+  border-radius: 5px;
+  margin: 0px 25px;
+  background: green;
+  color: white;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+b {
+  cursor: pointer;
+}
+b:hover {
+  color: blue;
+}
+.search1 {
+  display: flex;
+  flex-direction: row-reverse;
+}

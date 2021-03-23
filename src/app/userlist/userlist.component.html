@@ -1,0 +1,82 @@
+<div class="breadcum">
+  <h4>Thông tin User</h4>
+  <button type="button" (click)="logOut()" class="add">Đăng xuất</button>
+</div>
+<div class="row toolbar">
+  <div class="col-sm-6">
+    <button type="button" (click)="addUser()" class="add">Thêm mới</button>
+  </div>
+  <div class="col-sm-4">
+    <input
+      type="text"
+      [placeholder]="'first name'"
+      [(ngModel)]="text"
+      (keypress)="searchListEnter($event)"
+    />
+  </div>
+  <div class="col-sm-2 search1">
+    <button type="button" (click)="search()" class="search">Tìm kiếm</button>
+  </div>
+</div>
+
+<table style="margin-left: 30px">
+  <thead>
+    <tr>
+      <th scope="col">STT</th>
+      <th scope="col" class="text-center">account_number</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">age</th>
+      <th scope="col">email</th>
+      <th>Chức năng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data | paginate: config">
+      <td>
+        <span>{{ formatStt(item.index) }}</span>
+      </td>
+      <td class="text-center">{{ item.account_number }}</td>
+      <td>{{ item.firstname }}</td>
+      <td>{{ item.lastname }}</td>
+      <td>{{ item.age }}</td>
+      <td>{{ item.email }}</td>
+      <td>
+        <b
+          (click)="clickRecord('view', item.account_number)"
+          tooltip="Xem chi tiết"
+          placement="left"
+          show-delay="300"
+        >
+          <i class="fa fa-eye" style="color: green"></i>
+        </b>
+        <b
+          (click)="clickRecord('edit', item.account_number)"
+          style="cursor: pointer; margin: 0px 15px"
+          tooltip="Chỉnh sửa"
+          placement="top"
+          show-delay="300"
+          ><i
+            class="fa fa-pencil-square-o"
+            aria-hidden="true"
+            style="color: blue"
+          ></i
+        ></b>
+        <b
+          (click)="clickRecord('delete', item.account_number)"
+          tooltip="Xóa hoàn toàn"
+          placement="top"
+          show-delay="300"
+          ><i class="fa fa-trash" aria-hidden="true" style="color: red"></i
+        ></b>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination">
+  <pagination-controls
+    (pageChange)="pageChanged($event)"
+    [previousLabel]="labels.previousLabel"
+    [nextLabel]="labels.nextLabel"
+  ></pagination-controls>
+</div>

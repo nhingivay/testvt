@@ -1,0 +1,181 @@
+
+  app-login {
+    input#username {
+      width: 100% !important;
+      border-radius: 4px;
+      height: 30px !important;
+    padding: 5px 7px;
+  }
+  input#password {
+    width: 100% !important;
+    border-radius: 5px;
+    height: 30px !important;
+    padding: 5px 7px;
+}
+    .e-float-input, .e-float-input.e-control-wrapper {
+      line-height: 1.4;
+      margin-bottom: 0;
+      margin-top: 40px;
+      padding-top: 0;
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: #495057;
+  }
+    .e-float-input:not(.e-input-group), .e-float-input.e-control-wrapper:not(.e-input-group) {
+      display: inline-block;
+  }
+    .input-error {
+      color: red !important;
+      font-size: 10px;
+      display: flex;
+    }
+    label.e-float-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: black !important;
+      margin-bottom: 8px;
+      position: absolute;
+      top: -25px;
+    }
+    label.e-float-text.required:after {
+      color: red;
+      content: " *";
+    }
+    #login {
+      width: 100%;
+      background-image: url('/assets/images/login.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      #login-form-wrapper {
+        flex: 1 0 auto;
+        padding: 5% 32px;
+        #login-form {
+          width: 400px;
+          height: 400px;
+          background: #FFFFFF;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+          border-radius: 4px;
+          margin: 5% auto;
+          .login-logo {
+            padding-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+          .title {
+            position: relative;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            padding: 29px 34px 33px 33px;
+            
+          }
+          .form-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .form-group{
+            border-radius: 3px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+            position: relative;
+            .e-float-text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              color: black !important;
+              margin-bottom: 8px;
+              position: absolute;
+              top: -25px;
+            }
+            #username{
+              font-size: 14px;
+              line-height: 16px;
+              color: #6c757d;
+              height: 40px;
+              outline: none;
+              box-shadow: none;
+              border: 1px solid #e7e8ec;
+  
+            }
+            #password{
+              font-size: 14px;
+              line-height: 16px;
+              color: #6c757d;
+              height: 40px;
+              outline: none;
+              box-shadow: none;
+              border: 1px solid #e7e8ec;
+            }
+            .show-pass {
+              position: absolute;
+              top: 6px;
+              right: 6px;
+              cursor: pointer;
+            }
+            .input-error {
+              margin-left: 5px;
+            }
+  
+            input.ng-invalid.ng-touched {
+              border: 1px solid red !important;
+            }
+  
+            button.button {
+              width: 120px;
+              height: 35px;
+              font-size: 14px;
+              background: #ff5722;
+              border-radius: 4px;
+              border:none;
+              outline: none;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+          a {
+            font-size: 13px;
+            color: #6c757d;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        } 
+      } 
+    }
+  }
+  
+
+  
+  @media only screen and (min-width: 1000px) and (max-width: 1250px) {
+    #login {
+      #login-form-wrapper {
+        padding: 18% 32px;
+      }
+    }
+   }
+
+  @media only screen and (min-width: 1250px) { 
+    #login {
+      #login-form-wrapper {
+        padding: 4.3% 32px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) { 
+    #login {
+      #login-form-wrapper {
+        padding: 9.1% 32px;
+      }
+    }
+  }
+
+

@@ -1,0 +1,138 @@
+<h3>Chi tiết User</h3>
+<div class="row content">
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Account Number</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="number"
+        name="account_number"
+        [(ngModel)]="model.account_number"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">First Name</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="firstname"
+        [(ngModel)]="model.firstname"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">LastName</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="lastname"
+        [(ngModel)]="model.lastname"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Age</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="number"
+        name="age"
+        [(ngModel)]="model.age"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Address </label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="address"
+        [(ngModel)]="model.address"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Email</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="email"
+        [(ngModel)]="model.email"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Balance</label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="number"
+        name="balance"
+        [(ngModel)]="model.balance"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">Employer </label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="employer"
+        [(ngModel)]="model.employer"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">City </label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="city"
+        [(ngModel)]="model.city"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-3">
+      <label for="">State </label>
+    </div>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        name="state"
+        [(ngModel)]="model.state"
+        [disabled]="flag === 'view'"
+      />
+    </div>
+  </div>
+</div>
+<div class="row update">
+  <button *ngIf="flag !== 'view'" type="button" (click)="saveData()">
+    Cập nhật
+  </button>
+</div>

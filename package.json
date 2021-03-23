@@ -19,6 +19,11 @@
     "@angular/platform-browser": "~10.0.11",
     "@angular/platform-browser-dynamic": "~10.0.11",
     "@angular/router": "~10.0.11",
+    "@syncfusion/ej2-angular-grids": "^18.4.47",
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "ng2-tooltip-directive": "^2.9.22",
+    "ngx-pagination": "^5.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
